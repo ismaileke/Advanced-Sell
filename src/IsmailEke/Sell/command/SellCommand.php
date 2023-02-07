@@ -13,14 +13,8 @@ class SellCommand extends Command {
 		parent::__construct("sell", "Sell Command.", "/sell");
 	}
 
-    /**
-     * @param CommandSender $sender
-     * @param string $commandLabel
-     * @param array $args
-     * @return mixed|void
-     */
 	public function execute (CommandSender $sender, string $commandLabel, array $args) {
-		if ($sender instanceof Player) return;
+		if (!$sender instanceof Player) return;
         $sender->sendForm(new SellForm($sender));
 	}
 }

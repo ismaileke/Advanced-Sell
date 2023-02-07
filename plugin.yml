@@ -1,5 +1,5 @@
 name: Advanced-Sell
-version: 1
-api: 4.9.0
+version: 2
+api: 4.13.0
 main: IsmailEke\Sell\Main
 author: IsmailEke
